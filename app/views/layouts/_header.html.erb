@@ -1,0 +1,115 @@
+<div id="canvas-wrap">
+            <div id="navbar">
+                
+                <form action="creality-search.html" method="get">
+                    <input type="text" name="search" placeholder="Search here...">
+                    <input type="submit" name="search" value="Go">
+                </form>
+               <!--taken out <ul id="lock-search">
+                    <li>Lock Search </li>
+                    <li><input type="checkbox" value="within channel">Within Channel</li>
+                    <li><input type="checkbox" value="within genre">Within Genre</li> -->
+                </ul>
+                <!--End Search-->
+                </div><!--End Navigation Bar-->
+                
+                <div id="shuffle">
+                <form action="#" method="get">
+                    <input type="image" name="shuffle" src="images/Shuffle.png">
+                </form>  
+                </div>
+        
+            <nav id="topNav">  
+                    <ul>  
+                    <li class='main'>
+                            <a href="#" title="Nav Link 1">Sort <p class="drop"></p></a>
+                        <ul class='sub'>    
+                            <li><a href="#" title="Sub Nav Link 1">Popularity</a></li>  
+                            <li><a href="#" title="Sub Nav Link 2">Price</a></li>  
+                            <li><a href="#" title="Sub Nav Link 3">Likes</a></li>  
+                            <li><a href="#" title="Sub Nav Link 4">Views</a></li>  
+                            <li class="last"><a href="#" title="Sub Nav Link 5">Rating</a></li>  
+                        </ul>                  
+                        </li>  
+                    <li class='main'>  
+                        <a href="file:///Macintosh HD/Users/taylor05/Dropbox/BusinessStuff/Practice Wiki/Creality3D Test Wiki.html"  title="Sub Nav Link 1" title="Nav Link 1">Wiki  <p class="drop"></p></a>  
+                        <ul class='sub'>    
+                            <li><a href="file:///Macintosh HD/Users/taylor05/Dropbox/BusinessStuff/Practice Wiki/Creality3D Test Wiki.html"  title="Sub Nav Link 1">Home</a></li>  
+                            <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/philosphy.html" title="Sub Nav Link 2">Philosophy</a></li>  
+                            <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/culture-shift.html" title="Sub Nav Link 3">Culture Shift</a></li>  
+                            <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/business-model.html" title="Sub Nav Link 4">Business Model</a></li>  
+                            <li class="last"><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/3d-tech.html" title="Sub Nav Link 5">3D Tech Info.</a></li>  
+                        </ul>                  
+                    </li>  
+                    <li class='main'><a href="#" title="Nav Link 1">?????  <p class="drop"></p></a>
+                    </li>
+                    <li class='main'><a href="#" title="Nav Link 1">Genre  <p class="drop"></p></a>
+                        <ul class='sub'>
+                            <li><a href="#">Personal Items</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Frames</a></li>
+                            <li><a href="#">Dinnerware</a></li>
+                        </ul>  
+                    </li>  
+                    <li class='main'>
+                        <a href="#" title="Nav Link 1">Account  <p class="drop"></p></a>
+                        <ul class='sub'>
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Channel</a></li>
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </li>  
+                </ul>  
+            </nav>
+            <script>  
+    (function($){  
+                  
+        //cache nav  
+        var nav = $("#topNav");  
+                  
+        //add indicators and hovers to submenu parents  
+        nav.find("li").each(function() {  
+            if ($(this).find("ul").length > 0) {    
+  
+                //show subnav on hover  
+                $(this).mouseenter(function() {  
+                    $(this).find("ul").stop(true, true).slideDown(500);  
+                });  
+                          
+                //hide submenus on exit  
+                $(this).mouseleave(function() {  
+                    $(this).find("ul").stop(true, true).slideUp(200);  
+                });  
+            }  
+        });  
+    })(jQuery);  <!--End sort-->
+    
+        </script>  
+
+<div id="profile-button">
+            <ul>
+                <ul>
+                <li><button class="go-to" type="button">Create Profile</button></li>
+                <li><button id="profile-info" type="button">?</button></li>
+                </ul>
+        </div>
+        <div id="channel-button">
+                <ul>
+                <li><a href="#"><button class="go-to" type="button">Create Channel</button></a></li>
+                <li><button id="channel-info" type="button">?</button></li>
+                </ul>
+            </ul>
+            </div>
+            
+     
+            <div id="channelPopUp">
+                <h3>What is A Channel?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p> 
+            </div>
+
+            <div id="profilePopUp">
+                <h3>What is A Profile?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p> 
+            </div><!--END NAVIGATION PLUS BUTTONS-->
+            <script type="text/javascript" src="myscript.js"></script>
+            <div class="overlay2"></div>

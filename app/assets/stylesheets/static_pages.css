@@ -1,0 +1,14 @@
+#testList li{
+	color:#CCC;
+	margin-left: 200px;
+	margin-top: 50px;
+	font-size: 1.2em;
+	font-family:sans-serif;
+	list-style: none;
+
+}
+
+.primary {
+	margin-top: 100px;
+	position: absolute;
+}
