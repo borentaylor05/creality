@@ -2,7 +2,7 @@
             <div id="navbar">
                 
                 <form action="creality-search.html" method="get">
-                    <input type="text" name="search" placeholder="Search here...">
+                    <input id="topSearch" type="text" name="search" placeholder="Search here...">
                     <input type="submit" name="search" value="Go">
                 </form>
                <!--taken out <ul id="lock-search">
@@ -89,7 +89,7 @@
 <div id="profile-button">
             <ul>
                 <ul>
-                <li><button class="go-to" type="button">Create Profile</button></li>
+                <li><button class="go-to" type="button"><%= link_to "Create Profile", users_path%></button></li>
                 <li><button id="profile-info" type="button">?</button></li>
                 </ul>
         </div>

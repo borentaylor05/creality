@@ -1,0 +1,20 @@
+<title><%=@user.userName%></title>
+<head>
+</head>
+
+<body>
+	
+	<div class="all">
+<h1 class="myUser"><%=@user.userName%></h1>
+	</div>
+	<% @idea.each do |idea| %>
+	<div class="contain">
+	<ul class = "userPage">
+			<li><%= idea.subject %><li>
+			<ul class = "ideaBody">
+			<li><%= idea.body %></li>
+			</ul>	
+	</div>
+	<%end%>
+	
+</body>

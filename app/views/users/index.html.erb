@@ -1,0 +1,15 @@
+<title>All Users</title>
+<head>
+</head>
+
+<body>
+	
+	<div class="all">
+<h1>Users</h1>
+	<ul class="allUsers">
+		<%@user.each do |user|%>
+	<li>
+	<%=user.userName%>
+	<%end%></li></ul>
+	</div>
+</body>

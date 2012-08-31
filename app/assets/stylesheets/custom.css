@@ -40,7 +40,7 @@ body {
 
 }
 
-input[type=text] {
+#topSearch {
 	margin-top:15px;
 	margin-left:20px;
 	width:265px;
@@ -79,14 +79,15 @@ input[type=text] {
 	
 }
 
-input[type=text]:focus{
+#topSearch:focus{
 	border: 4px solid #09f;
 	box-shadow: 2px 2px 17px #FFFFFF;
 	background-color: #F9F9F9;
 	color: #464646;
 	background-position: 266px -48px;
-	
 }
+
+
 
 input[type=submit] {
 		height:30px;
@@ -869,4 +870,6 @@ h2{
 	position:absolute;
 	margin-left:451px;
 	margin-top:10px;}
-
+.omni{
+	position: absolute;
+}

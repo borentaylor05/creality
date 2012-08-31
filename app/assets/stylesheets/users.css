@@ -1,0 +1,71 @@
+.myUser{
+	text-align: left;
+	padding-left: 10px;
+	color:#FFF;
+	font-family: sans-serif;
+}
+
+.all {
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid yellow;
+	margin-top: 100px;
+	width: 100%;
+	text-align: left;
+}
+
+.myForm {
+	margin-top: 100px;
+}
+
+.myForm ul {
+	display: block;
+	text-align: center;
+	list-style: none;
+}
+
+.myForm ul li {
+	margin-top: 20px;
+}
+
+.newUser {
+	background-color: #000;
+	background-image: none;
+	width: 300px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 1.4em;
+	color:white;
+}
+
+
+.myLabel {
+	font-size: 1.5em;
+	color: #FFF;
+	font-family: sans-serif;
+}
+
+.newUser:focus {
+	border: 4px solid #09f;
+	box-shadow: 2px 2px 17px #FFFFFF;
+	background-color: #F9F9F9;
+	color: #464646;
+}
+
+
+
+.myButton {
+	width: 200px;
+}
+
+.allUsers {
+	color: #CCC;
+	display: block;
+	font-family: sans-serif;
+}
+
+.userPage {
+	font-family: sans-serif;
+	list-style: none;
+	font-size: 1.2em;
+}

@@ -1,0 +1,29 @@
+<h1>Sign Up</h1>
+
+<div class="center">
+		<div class="myForm">
+			<ul>
+			<%= form_for(@user) do |f| %>
+			<%= render 'shared/error_messages' %> 
+				<li><%= f.label :email, class: "myLabel" %></li>
+					<li>
+				<%= f.text_field :email, class: "newUser" %></li>
+
+				<li><%= f.label :userName, class: "myLabel"%></li>
+				<li>
+				<%= f.text_field :userName, class: "newUser" %></li>
+
+				<li><%= f.label :password, class: "myLabel" %></li>
+				<li>
+				<%= f.password_field :password, class: "newUser" %></li>
+
+				<li><%= f.label :password_confirmation, "Confirmation", class: "myLabel" %></li>
+				<li>
+				<%= f.password_field :password_confirmation, class: "newUser" %></li>
+
+				<li><%= f.submit "Create My Account", class: "myButton" %></li>
+				<% end %>
+			</ul>
+			</div>
+		</div>
+		

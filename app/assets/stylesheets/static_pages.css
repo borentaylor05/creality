@@ -1,14 +1,33 @@
 #testList li{
-	color:#CCC;
-	margin-left: 200px;
-	margin-top: 50px;
+	color:#000;
+	margin-top: 20px;
 	font-size: 1.2em;
 	font-family:sans-serif;
 	list-style: none;
+	padding: 8px;
+	margin-top: 0px;
 
+}
+#testList li a{
+	color: #666;
+	padding: 10px;
 }
 
 .primary {
-	margin-top: 100px;
+	margin-left: 380px;
+	margin-top: 150px;
 	position: absolute;
+	
+}
+
+.myIdeas {
+	font-size: .8em;
+}
+
+.contain {
+	width: 600px;
+	background-color: rgba(255,255,255,.9);
+	border: 5px solid lime;
+	margin-top: 20px;
+	border-radius: 20px;
 }

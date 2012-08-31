@@ -6,11 +6,22 @@
 <body>
 
 <div class="primary">
-	<% @user.each do |user| %>
+	
 	<ul id="testList">
-		<li><%=user.userName%></li>
+	<% @user.each do |user| %>
+	<div class="contain">
+	<li><%=link_to user.userName, user%></li>
+	<ul class="myIdeas">
+		<li><% if user.ideas.any? %>
+			<%=user.ideas.last.subject%>
+				<%else%>
+				<%="No smarts for ideas"%>
+				<%end%></li>
+		</ul>
+	</div>
+		<%end%>
 	</ul>
-	<%end%>
+	
 </div>
 </body>
 
