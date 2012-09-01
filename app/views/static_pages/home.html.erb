@@ -6,20 +6,21 @@
 <body>
 
 <div class="primary">
-	
 	<ul id="testList">
 	<% @user.each do |user| %>
 	<div class="contain">
 	<li><%=link_to user.userName, user%></li>
 	<ul class="myIdeas">
 		<li><% if user.ideas.any? %>
-			<%=user.ideas.last.subject%>
+			<%=user.ideas.first.subject%>
 				<%else%>
 				<%="No smarts for ideas"%>
 				<%end%></li>
+
 		</ul>
 	</div>
 		<%end%>
+		
 	</ul>
 	
 </div>

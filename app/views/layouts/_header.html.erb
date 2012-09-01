@@ -1,6 +1,7 @@
 <div id="canvas-wrap">
             <div id="navbar">
-                
+                     
+
                 <form action="creality-search.html" method="get">
                     <input id="topSearch" type="text" name="search" placeholder="Search here...">
                     <input type="submit" name="search" value="Go">
@@ -15,7 +16,7 @@
                 
                 <div id="shuffle">
                 <form action="#" method="get">
-                    <input type="image" name="shuffle" src="images/Shuffle.png">
+                    <input type="image" name="shuffle" src="/assets/Shuffle.png">
                 </form>  
                 </div>
         
@@ -32,17 +33,22 @@
                         </ul>                  
                         </li>  
                     <li class='main'>  
-                        <a href="file:///Macintosh HD/Users/taylor05/Dropbox/BusinessStuff/Practice Wiki/Creality3D Test Wiki.html"  title="Sub Nav Link 1" title="Nav Link 1">Wiki  <p class="drop"></p></a>  
+                        <%= link_to "Wiki", wiki_path%><p class="drop"></p>  
                         <ul class='sub'>    
-                            <li><a href="file:///Macintosh HD/Users/taylor05/Dropbox/BusinessStuff/Practice Wiki/Creality3D Test Wiki.html"  title="Sub Nav Link 1">Home</a></li>  
+                            <li><%= link_to "Home", wiki_path%></li>  
                             <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/philosphy.html" title="Sub Nav Link 2">Philosophy</a></li>  
                             <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/culture-shift.html" title="Sub Nav Link 3">Culture Shift</a></li>  
                             <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/business-model.html" title="Sub Nav Link 4">Business Model</a></li>  
                             <li class="last"><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/3d-tech.html" title="Sub Nav Link 5">3D Tech Info.</a></li>  
                         </ul>                  
                     </li>  
-                    <li class='main'><a href="#" title="Nav Link 1">?????  <p class="drop"></p></a>
-                    </li>
+                    <li class="main"><a href="#">Anything<p class="drop"></p></a>
+                            <ul class="sub">
+                                <li><a href"#">Add</a></li>
+                                <li><a href"#">Anything</a></li>
+                                <li><a href"#">Here</a></li>
+                            </ul>
+                        </li>
                     <li class='main'><a href="#" title="Nav Link 1">Genre  <p class="drop"></p></a>
                         <ul class='sub'>
                             <li><a href="#">Personal Items</a></li>
@@ -87,9 +93,10 @@
         </script>  
 
 <div id="profile-button">
+    <img src="/assets/Logo3.png" id="logo">
             <ul>
                 <ul>
-                <li><button class="go-to" type="button"><%= link_to "Create Profile", users_path%></button></li>
+                <li><%= link_to "Create Profile", new_path%></li>
                 <li><button id="profile-info" type="button">?</button></li>
                 </ul>
         </div>
@@ -113,3 +120,7 @@
             </div><!--END NAVIGATION PLUS BUTTONS-->
             <script type="text/javascript" src="myscript.js"></script>
             <div class="overlay2"></div>
+
+
+
+

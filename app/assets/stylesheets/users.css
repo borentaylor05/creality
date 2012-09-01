@@ -8,10 +8,11 @@
 .all {
 	margin-left: auto;
 	margin-right: auto;
-	border: 4px solid yellow;
-	margin-top: 100px;
+	/*border: 4px solid yellow;*/
+	margin-top: 170px;
 	width: 100%;
 	text-align: left;
+	margin-left: 150px;
 }
 
 .myForm {
@@ -68,4 +69,34 @@
 	font-family: sans-serif;
 	list-style: none;
 	font-size: 1.2em;
+	color: lime;
+}
+
+.noIdea {
+	width: 600px;
+	background-color: rgba(0,0,0,.9);
+	border: 5px solid lime;
+	margin-top: 20px;
+	border-radius: 20px;
+	color: red;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding:10px;
+	height: 30px;
+	text-align: center;
+	font-family: sans-serif;
+	margin-left: 130px;
+}
+.containUsers {
+	width: 600px;
+	background-color: #333;
+	border: 5px solid #09f;
+	margin-top: 20px;
+	border-radius: 20px;
+	margin-left: 130px;
+}
+
+.ideaBody{
+	color:#CCC;
+	margin-top: 7px;
 }

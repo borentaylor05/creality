@@ -3,12 +3,25 @@
 
 
 $(document).ready(function() { // Allows information popups for channel and profile "?" buttons.
+	$('#sellers, #buyers').hide();
+
+	$('.showBuySell').click(function() {
+		$('#sellers, #buyers').fadeIn(300).css('z-index', 1000);
+		$('.overlay2').fadeIn(200);
+	});
+	$('.overlay2').click(function () {
+		$('#buyers, #sellers').fadeOut();
+	});
+	
+
 	function shadow() {
 		$('.link1').css('text-shadow', '2px 2px  lime');
 		};
 	function noShadow (){
 		$('.link1').css('text-shadow', 'none');
 		};
+
+	
 	$('.drop-link').toggle(function() {
 						$(this).next('.drop-menu').slideDown (300);	
 						$(this).css('text-shadow', '2px 2px  lime');
@@ -297,6 +310,7 @@ drawers('.image',50, 330, total, 400, 190);
 					transitionOut: 'fade',
 					titlePosition: 'over'
 					});
+
 		
         }); //End Ready
 		

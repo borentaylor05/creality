@@ -5,10 +5,13 @@
 <body>
 	
 	<div class="all">
-<h1 class="myUser"><%=@user.userName%></h1>
+<h1 class="myUser"><%=@user.userName + "'s Ideas"%></h1>
 	</div>
-	<% @idea.each do |idea| %>
-	<div class="contain">
+	<%if @user.ideas.empty?%>
+		<div class="noIdea"><%= @user.userName + " has no ideas right now."%></div>
+	<%end%>
+	<% @user.ideas.each do |idea| %>
+	<div class="containUsers">
 	<ul class = "userPage">
 			<li><%= idea.subject %><li>
 			<ul class = "ideaBody">
@@ -17,4 +20,5 @@
 	</div>
 	<%end%>
 	
+
 </body>
