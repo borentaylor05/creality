@@ -6,7 +6,6 @@ def index
 end
 def show
 	@user = User.find(params[:id])
-	@idea = @user.ideas.all
 end
 
 def new
