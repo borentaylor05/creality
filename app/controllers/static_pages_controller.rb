@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
 def home
-	@user = User.all
+	@user = User.all(:order=>'created_at DESC')
 end
 
 def wiki

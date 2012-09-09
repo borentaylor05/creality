@@ -3,7 +3,7 @@
 
 
 $(document).ready(function() { // Allows information popups for channel and profile "?" buttons.
-	$('#sellers, #buyers').hide();
+	$('#sellers, #buyers, .createUser').hide();
 
 	$('.showBuySell').click(function() {
 		$('#sellers, #buyers').fadeIn(300).css('z-index', 1000);

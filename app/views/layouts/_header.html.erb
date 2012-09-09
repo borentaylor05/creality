@@ -16,14 +16,14 @@
                 
                 <div id="shuffle">
                 <form action="#" method="get">
-                    <input type="image" name="shuffle" src="/assets/Shuffle.png">
+                    <input type="image" name="shuffle" src="/assets/Shuffle.png" id="shuffleMe">
                 </form>  
                 </div>
         
             <nav id="topNav">  
                     <ul>  
                     <li class='main'>
-                            <a href="#" title="Nav Link 1">Sort <p class="drop"></p></a>
+                            <%=link_to "Home", root_path%><p class="drop"></p></a>
                         <ul class='sub'>    
                             <li><a href="#" title="Sub Nav Link 1">Popularity</a></li>  
                             <li><a href="#" title="Sub Nav Link 2">Price</a></li>  
@@ -35,9 +35,9 @@
                     <li class='main'>  
                         <%= link_to "Wiki", wiki_path%><p class="drop"></p>  
                         <ul class='sub'>    
-                            <li><%= link_to "Home", wiki_path%></li>  
-                            <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/philosphy.html" title="Sub Nav Link 2">Philosophy</a></li>  
-                            <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/culture-shift.html" title="Sub Nav Link 3">Culture Shift</a></li>  
+                            <li><%= link_to "Wiki Home", wiki_path%></li>  
+                            <li><%= link_to "Philosphy", wiki_philosophy_path%></a></li>  
+                            <li><%= link_to "Culture Shift", wiki_culture_path%></li>  
                             <li><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/business-model.html" title="Sub Nav Link 4">Business Model</a></li>  
                             <li class="last"><a href="file:///Macintosh%20HD/Users/taylor05/Dropbox/BusinessStuff/Practice%20Wiki/3d-tech.html" title="Sub Nav Link 5">3D Tech Info.</a></li>  
                         </ul>                  
@@ -102,7 +102,7 @@
         </div>
         <div id="channel-button">
                 <ul>
-                <li><a href="#"><button class="go-to" type="button">Create Channel</button></a></li>
+                <li><%= link_to "New Idea", ideas_new_path%></li>
                 <li><button id="channel-info" type="button">?</button></li>
                 </ul>
             </ul>

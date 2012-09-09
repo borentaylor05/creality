@@ -284,7 +284,7 @@ p.drop{
 	height:50px;
 	position:absolute;
 	list-style-type:none;
-	margin-left:810px;
+	margin-left:110px;
 	margin-top:50px;
 	z-index:11;
 	}
@@ -294,7 +294,7 @@ p.drop{
 	height:50px;
 	position:absolute;
 	list-style-type:none;
-	margin-left:1120px;
+	margin-left:120px;
 	margin-top:420px;
 	z-index:11;
 	}
@@ -415,9 +415,9 @@ h3 {
 	}
 	
 #logo {
-	margin-top:10px;
+	margin-top:-10px;
 	position: absolute;
-	margin-left: -300px;
+	margin-left: 600px;
 	width: 310px;
 	height: 70px;
 	z-index: 0;
@@ -431,7 +431,7 @@ span {
 	position:absolute;
 	margin-top:60px;
 	z-index:11;
-	margin-left:-40px;
+	margin-left:-90px;
 	}
 
 #shuffle2 {
@@ -874,3 +874,7 @@ h2{
 	position: absolute;
 }
 
+#shuffleMe {
+	width: 130px;
+	height: 120px;
+}
