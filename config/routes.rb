@@ -6,6 +6,10 @@ resources :users
 
 resource :session
 
+match '/login' => 'sessions#new', :as => 'login'
+
+match '/logout'=> 'sessions#destroy', :as =>'logout'
+
 match '/ideas/new', to: 'ideas#new'
 
 root to: 'static_pages#home' 
